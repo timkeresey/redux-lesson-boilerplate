@@ -19,7 +19,11 @@ const getFilteredTodos = (todos, filter) => {
 const TodoList = ({todos, onTodoClick}) => {
 
   const displayTodos = todos.map(todo => (
-    <Todo {...todo} key={todo.id} handleClick={() => onTodoClick(todo.id)} />
+    <Todo 
+      {...todo} 
+      key={todo.id} 
+      handleClick={() => onTodoClick(todo.id)} 
+    />
   ))
 
   return (
@@ -28,6 +32,7 @@ const TodoList = ({todos, onTodoClick}) => {
     </ul>
   )
 }
+
 const mapStateToProps = (state) => ({
   todos: getFilteredTodos(state.todos, state.filter)
 })

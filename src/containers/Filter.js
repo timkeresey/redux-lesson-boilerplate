@@ -6,12 +6,9 @@ const Filter = ({filter, children, handleClick}) => {
   return (
     <a
       href="#"
-      onClick={ (e) => {
-        e.preventDefault()
-        handleClick(filter)
-      }}
+      onClick={() => handleClick(filter)}
     >
-      { children }
+      {children}
     </a>
   )
 }
