@@ -1,6 +1,4 @@
-const initialState = []
-
-export const todosReducer = (state = initialState, action) => {
+export const todosReducer = (state = [], action) => {
   switch(action.type) {
     case 'ADD_TODO':
       return [...state, {text: action.text, id: action.id, completed: false}];
