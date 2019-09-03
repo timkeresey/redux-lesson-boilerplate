@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AddTodoForm from './AddTodoForm';
+import AddTodoForm from '../containers/AddTodoForm';
 import ToDoList from '../containers/ToDoList';
 
 class App extends Component {
