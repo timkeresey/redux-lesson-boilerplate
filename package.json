@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "react-scripts": "^2.1.8"
+    "@testing-library/jest-dom": "^5.4.0",
+    "@testing-library/react": "^10.0.2",
+    "react-scripts": "^3.4.1"
   },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0"
   },
